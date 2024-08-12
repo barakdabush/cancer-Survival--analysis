@@ -8,10 +8,8 @@ This repository contains scripts and functions for conducting survival analysis 
 - [File Structure](#file-structure)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Functions Overview](#functions-overview)
-- [Data](#data)
 - [Results](#results)
-- [License](#license)
+
 
 ## Project Overview
 
@@ -40,7 +38,7 @@ The goal of this project is to perform survival analysis using the Kaplan-Meier 
     pip install -r requirements.txt
     ```
 
-## Usage
+## Functions Overview
 
 1. **Data Pre-processing:**
    The `pre_process` function is used to clean and prepare the data for analysis. It handles missing values, converts data types, and drops unnecessary columns.
@@ -53,8 +51,14 @@ The goal of this project is to perform survival analysis using the Kaplan-Meier 
 
 4. **Log-rank Test:**
    The `log_rank_survival_analysis` function performs pairwise log-rank tests to compare survival distributions between different tumor stages.
+## Usage
+You can explore the detailed analysis by reviewing the notebook provided in this repository. 
+If you prefer to run the analysis programmatically, you can use the functions provided in cancer_analysis.py.
 
-### Example
+## Results
 
-```bash
-python cancer_analysis.py
+![image](https://github.com/user-attachments/assets/2c98b259-f6cd-49f0-a510-831601987a03)
+
+![image](https://github.com/user-attachments/assets/5b6c8d24-3e49-4435-9ae7-7b1e76d3070e)
+
+
