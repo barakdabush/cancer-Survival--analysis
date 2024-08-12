@@ -13,31 +13,35 @@ This repository contains scripts and functions for conducting survival analysis 
 
 ## Project Overview
 
-The goal of this project is to conduct comprehensive survival analysis on a clinical dataset. The analysis includes the following key components:
+This project conducts a thorough survival analysis on a clinical dataset using both traditional statistical methods and machine learning techniques. The analysis is structured into the following key components:
 
-Data Pre-processing and Visualization: The dataset is pre-processed to handle categorical variables, and demographic distributions are visualized to provide insights into the data.
+- **Kaplan-Meier Estimator and Log-rank Test**
+  - **Kaplan-Meier Estimator**: Estimates survival functions to evaluate survival probabilities over time.
+  - **Log-rank Test**: Compares survival rates across different tumor stages to identify significant differences.
 
-Kaplan-Meier Estimator and Log-rank Test: These traditional statistical methods are used to estimate survival functions and compare survival rates across different tumor stages, respectively.
+- **Data Pre-processing and Visualization**
+  - **Data Pre-processing**: Handles categorical variables to prepare the dataset for analysis.
+  - **Visualization**: Displays demographic distributions to gain insights into the dataset.
 
-Random Survival Forest (RSF) Model: In addition to traditional methods, a Random Survival Forest model is employed to perform survival analysis. This includes:
+- **Random Survival Forest (RSF) Model**
+  - **Model Training**: Trains the RSF model on the clinical data to predict survival times.
+  - **Performance Evaluation**: Assesses model performance using the concordance index.
+  - **Feature Importance**: Identifies important features through permutation importance.
+  - **Feature Reduction**: Reduces the feature set based on importance scores and retrains the model to enhance interpretability.
 
-Training the RSF model on the clinical data to predict survival times.
-Evaluating model performance using the concordance index.
-Identifying important features through permutation importance.
-Reducing the feature set based on importance scores and retraining the model to enhance interpretability.
-By integrating both traditional and machine learning approaches, this project aims to provide a deeper understanding of the factors influencing survival outcomes.
 
 ## File Structure
 
 - `clinical.tsv`: The dataset containing clinical information of cancer patients.
 - `cancer_analysis.py`: The main script containing all functions for data processing, analysis, and visualization.
+- `cancer_analysis.ipynb`: Notebook with comprehensive analysis and visualizations for the entire project.
 - `README.md`: Project documentation.
 
 ## Installation
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/yourusername/cancer-survival-analysis.git
+    git clone https://github.com/barakdabush/cancer-survival-analysis.git
     ```
 
 2. Navigate to the project directory:
@@ -63,6 +67,7 @@ By integrating both traditional and machine learning approaches, this project ai
 
 4. **Log-rank Test:**
    The `log_rank_survival_analysis` function performs pairwise log-rank tests to compare survival distributions between different tumor stages.
+   
 ## Usage
 You can explore the detailed analysis by reviewing the notebook provided in this repository. 
 If you prefer to run the analysis programmatically, you can use the functions provided in cancer_analysis.py.
