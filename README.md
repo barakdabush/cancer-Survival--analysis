@@ -13,7 +13,19 @@ This repository contains scripts and functions for conducting survival analysis 
 
 ## Project Overview
 
-The goal of this project is to perform survival analysis using the Kaplan-Meier estimator and Log-rank test on a clinical dataset. The analysis includes pre-processing the data, visualizing demographic distributions, and analyzing survival rates across different tumor stages.
+The goal of this project is to conduct comprehensive survival analysis on a clinical dataset. The analysis includes the following key components:
+
+Data Pre-processing and Visualization: The dataset is pre-processed to handle categorical variables, and demographic distributions are visualized to provide insights into the data.
+
+Kaplan-Meier Estimator and Log-rank Test: These traditional statistical methods are used to estimate survival functions and compare survival rates across different tumor stages, respectively.
+
+Random Survival Forest (RSF) Model: In addition to traditional methods, a Random Survival Forest model is employed to perform survival analysis. This includes:
+
+Training the RSF model on the clinical data to predict survival times.
+Evaluating model performance using the concordance index.
+Identifying important features through permutation importance.
+Reducing the feature set based on importance scores and retraining the model to enhance interpretability.
+By integrating both traditional and machine learning approaches, this project aims to provide a deeper understanding of the factors influencing survival outcomes.
 
 ## File Structure
 
