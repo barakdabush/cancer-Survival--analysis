@@ -15,13 +15,13 @@ This repository contains scripts and functions for conducting survival analysis 
 
 This project conducts a thorough survival analysis on a clinical dataset using both traditional statistical methods and machine learning techniques. The analysis is structured into the following key components:
 
-- **Kaplan-Meier Estimator and Log-rank Test**
-  - **Kaplan-Meier Estimator**: Estimates survival functions to evaluate survival probabilities over time.
-  - **Log-rank Test**: Compares survival rates across different tumor stages to identify significant differences.
-
 - **Data Pre-processing and Visualization**
   - **Data Pre-processing**: Handles categorical variables to prepare the dataset for analysis.
   - **Visualization**: Displays demographic distributions to gain insights into the dataset.
+
+- **Kaplan-Meier Estimator and Log-rank Test**
+  - **Kaplan-Meier Estimator**: Estimates survival functions to evaluate survival probabilities over time.
+  - **Log-rank Test**: Compares survival rates across different tumor stages to identify significant differences.
 
 - **Random Survival Forest (RSF) Model**
   - **Model Training**: Trains the RSF model on the clinical data to predict survival times.
@@ -70,7 +70,7 @@ This project conducts a thorough survival analysis on a clinical dataset using b
    
 ## Usage
 You can explore the detailed analysis by reviewing the notebook provided in this repository. 
-If you prefer to run the analysis programmatically, you can use the functions provided in cancer_analysis.py.
+If you prefer to run the analysis programmatically, you can use the functions provided in cancer_analysis_functions.py.
 
 ## Results
 
