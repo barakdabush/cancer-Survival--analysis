@@ -43,4 +43,18 @@ The goal of this project is to perform survival analysis using the Kaplan-Meier 
 ## Usage
 
 1. **Data Pre-processing:**
-   The `pre_process` function is used to clean
+   The `pre_process` function is used to clean and prepare the data for analysis. It handles missing values, converts data types, and drops unnecessary columns.
+
+2. **Demographic Analysis:**
+   Use the `demographic_analysis` function to visualize the distribution of age, gender, ethnicity, and race among the patients.
+
+3. **Survival Analysis:**
+   The `kalman_meier_fitter_analysis` function plots the survival functions for different tumor stages using the Kaplan-Meier estimator.
+
+4. **Log-rank Test:**
+   The `log_rank_survival_analysis` function performs pairwise log-rank tests to compare survival distributions between different tumor stages.
+
+### Example
+
+```bash
+python cancer_analysis.py
