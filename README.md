@@ -7,6 +7,7 @@ This repository contains scripts and functions for conducting survival analysis 
 - [Project Overview](#project-overview)
 - [File Structure](#file-structure)
 - [Installation](#installation)
+- [Functions Overview](#functions-overview)
 - [Usage](#usage)
 - [Results](#results)
 
@@ -67,6 +68,9 @@ This project conducts a thorough survival analysis on a clinical dataset using b
 
 4. **Log-rank Test:**
    The `log_rank_survival_analysis` function performs pairwise log-rank tests to compare survival distributions between different tumor stages.
+
+5. **plot_feature_importance:**
+   The `plot_feature_importance` function visualizes feature importances from a Random Survival Forest model as a horizontal bar plot.
    
 ## Usage
 You can explore the detailed analysis by reviewing the notebook provided in this repository. 
@@ -77,5 +81,3 @@ If you prefer to run the analysis programmatically, you can use the functions pr
 ![image](https://github.com/user-attachments/assets/2c98b259-f6cd-49f0-a510-831601987a03)
 
 ![image](https://github.com/user-attachments/assets/5b6c8d24-3e49-4435-9ae7-7b1e76d3070e)
-
-
